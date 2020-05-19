@@ -1,0 +1,56 @@
+{
+  "name": "vux-extend",
+  "version": "1.0.0",
+  "description": "vux-extend 对 vux 进行了扩展，包含了 xdialog-fix、custom-viewbox、custom-viewbox、viewbox-data-handler、xheader-extend 等",
+  "main": "dist/vux-extend.cjs.js",
+  "module": "dist/vux-extend.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuoBinyong/vux-extend"
+  },
+  "keywords": [
+    "vue",
+    "vux",
+    "extend",
+    "vux extend",
+    "vux 扩展",
+    "xdialog-fix",
+    "custom-viewbox",
+    "custom-viewbox",
+    "viewbox-data-handler",
+    "xheader-extend"
+  ],
+  "author": "郭斌勇",
+  "license": "ISC",
+  "files": [
+    "dist/[^.]*",
+    "types/[^.]*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.ts",
+    "pretest": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "es-expand": "^1.0.13",
+    "eslint": "^7.0.0",
+    "rollup": "^2.7.2",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "ts-node": "^8.9.1",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "custom-viewbox": "^1.0.3",
+    "viewbox-data-handler": "^1.0.0",
+    "xdialog-fix": "^1.0.0",
+    "xheader-extend": "^1.0.0"
+  }
+}
